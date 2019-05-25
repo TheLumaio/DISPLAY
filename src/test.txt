@@ -1,0 +1,29 @@
+kernel script base script
+"cpu" passes syscalls to kernel base script via some register
+cpu will have to handle app scripts and threads
+each script runs in its own thread capped at X mhz
+
+code like:
+sys 0x1
+
+calls a syscall and gets passed to kernel script
+
+users can modify kernel script to be prettier, create user interfaces, etc
+
+need to stop normal scripts from doing kernel level things
+
+use a stack for syscalls to be sent to a kernel, if the stack is full
+then freeze scripts when they try to make them
+
+
+db xpos 0 // allocate a single byte with variable "xpos" and set as 0
+
+_Start:
+    sda 0x20+it // x position
+    sdb 0x2b // y position
+    sdc 0x4b // the letter 'L'
+    syscall 0x1 // putchar syscall passed to base script
+    inc xpos // increment xpos
+    jmp _Start
+    
+ 

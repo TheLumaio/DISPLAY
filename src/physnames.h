@@ -1,0 +1,25 @@
+#ifndef PHYSACNAMES_H
+#define PHYSACNAMES_H
+
+#define init_physics InitPhysics
+#define run_physics_step RunPhysicsStep
+#define set_physics_time_step SetPhysicsTimeStep
+#define is_physics_enabled IsPhysicsEnabled
+#define set_physics_gravity SetPhysicsGravity
+#define create_physics_body_circle CreatePhysicsBodyCircle
+#define create_physics_body_rectangle CreatePhysicsBodyRectangle
+#define create_physics_body_polygon CreatePhysicsBodyPolygon
+#define physics_add_force PhysicsAddForce
+#define physics_add_torque PhysicsAddTorque
+#define physics_shatter PhysicsShatter
+#define get_physics_bodies_count GetPhysicsBodiesCount
+#define get_physics_body GetPhysicsBody
+#define get_physics_shape_type GetPhysicsShapeType
+#define get_physics_shape_vertices_count GetPhysicsShapeVerticesCount
+#define get_physics_shape_vertex GetPhysicsShapeVertex
+#define set_physics_body_rotation SetPhysicsBodyRotation
+#define destroy_physics_body DestroyPhysicsBody
+#define reset_physics ResetPhysics
+#define close_physics ClosePhysics
+
+#endif
