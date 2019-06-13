@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "cello.h": "c",
+        "physac.h": "c",
+        "raymath.h": "c"
+    }
+}
